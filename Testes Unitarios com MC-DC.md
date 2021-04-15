@@ -26,15 +26,15 @@ TABELA VERDADE - Para montar a tabela pegamos a quantidade de caminhos E didimos
 Para segunda coluna pegamos a quantidade de caminhos e dividimos por 4 então teremos 2 verdadeiros alternados de 2 falsos.
 Na terceira coluna pegamos a quantidade de caminhos e dividimos por ela mesma e teremos  1 verdadeiro alternado de 1 falso. 
 
-A- B- C -> R
-v- v- v -> ?
-v- v- f -> ?
-v- f- v -> ?
-v- f- f -> ?
-f- v- v -> ?
-f- v- f -> ?
-f- f- v -> ?
-f- f- f -> ?
+	A- B- C -> R
+	v- v- v -> ?
+	v- v- f -> ?
+	v- f- v -> ?
+	v- f- f -> ?
+	f- v- v -> ?
+	f- v- f -> ?
+	f- f- v -> ?
+	f- f- f -> ?
 
 resolvemos as sub condições 
 
