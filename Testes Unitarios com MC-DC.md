@@ -39,6 +39,7 @@ Na terceira coluna pegamos a quantidade de caminhos e dividimos por ela mesma e 
 resolvemos as sub condições 
 
 resolvendo  B E C
+
 	B- C -> (b && c)
 	v- v ->    v
 	v- f ->    v
