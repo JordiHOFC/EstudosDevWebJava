@@ -154,16 +154,17 @@ então procuramos ->  (f v f) = v -  nao encontramos, L{(5,7)}
 
 ENTÃO A LISTA DE PARES PARA CONDICAO B É l={(5,7)}
 
-3)LEVAR EM CONSIDERACAO A CONDICAÇÃO: C - LISTA DE PARES PARA C{VAZIO}
-	  A ||(B && C) 	-> r
-	1) v- v- v  	-> v     
-	2) v- v- f 	-> v
-	3) v- f- v	-> v
-	4) v- f- f 	-> v
-	5) f- v- v 	-> v
-	6) f- v- f 	-> f
-	7) f- f- v 	-> f
-	8) f- f- f 	-> f
+3)LEVAR EM CONSIDERACAO A CONDICAÇÃO: C - LISTA DE PARES PARA C{VAZIO} 
+		
+		A ||(B && C) 	-> r
+		1) v- v- v  	-> v     
+		2) v- v- f 	-> v
+		3) v- f- v	-> v
+		4) v- f- f 	-> v
+		5) f- v- v 	-> v
+		6) f- v- f 	-> f
+		7) f- f- v 	-> f
+		8) f- f- f 	-> f
 
 C -> V mudamos o seu valor para falso -> C=f, buscamos encontrar uma condição que tenha valor de R oposto ao da expressão: 1) 
 então procuramos ->  (v v f) = f - nao encontrado L{}
@@ -213,10 +214,10 @@ MATRICULA DE VESTIBULAR
 caminho 1 - valores para as expressões ->{5,6,7,2}
 
 
-2) v- v- f 	-> v -> entrada pessoa com { idade 18 anos, pai assina, matricula nao paga} -> inscrição aprovada
-5) f- v- v 	-> v -> entrada pessoa com { idade 17 anos, pai assina, matricula paga} -> inscrição aprovada
-6) f- v- f 	-> f -> entrada pessoa com { idade 17 anos, pai assina, matricula nao  paga} -> inscrição reprovada
-7) f- f- v 	-> f -> entrada pessoa com { idade 17 anos, pai nao  assina, matricula paga} -> inscrição reprovada
+	2) v- v- f 	-> v -> entrada pessoa com { idade 18 anos, pai assina, matricula nao paga} -> inscrição aprovada
+	5) f- v- v 	-> v -> entrada pessoa com { idade 17 anos, pai assina, matricula paga} -> inscrição aprovada
+	6) f- v- f 	-> f -> entrada pessoa com { idade 17 anos, pai assina, matricula nao  paga} -> inscrição reprovada
+	7) f- f- v 	-> f -> entrada pessoa com { idade 17 anos, pai nao  assina, matricula paga} -> inscrição reprovada
 
 
 
