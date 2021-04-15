@@ -42,8 +42,8 @@ resolvendo  B E C
 
 	B- C -> (b && c)
 	v- v ->    v
-	v- f ->    v
-	f- v ->    v
+	v- f ->    f
+	f- v ->    f
 	f- f ->    f
 
 resolvemos a condição final
