@@ -197,9 +197,9 @@ ENTÃO A LISTA DE PARES PARA CONDICAO C É l={(5,6)}
 	1) começo da lista que tem o menor tamanho e vou incluindo as outras de forma a encontrar N+1 expressoes, no caso 4.
 	2) priorizo caminho que me levem a ter N resultados falsos e 1 verdadeiro.
 
-ENTÃO A LISTA DE PARES PARA CONDICAO A É l={(2,6),(3,7),(4,8)}
-ENTÃO A LISTA DE PARES PARA CONDICAO B É l={(5,7)}
-ENTÃO A LISTA DE PARES PARA CONDICAO C É l={(5,6)}
+	ENTÃO A LISTA DE PARES PARA CONDICAO A É l={(2,6),(3,7),(4,8)}
+	ENTÃO A LISTA DE PARES PARA CONDICAO B É l={(5,7)}
+	ENTÃO A LISTA DE PARES PARA CONDICAO C É l={(5,6)}
 
 POSSIVÉIS CAMINHOS
 
