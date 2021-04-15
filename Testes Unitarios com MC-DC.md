@@ -4,12 +4,12 @@ DE N para n/2.
 veja um exemplo, você tem que desenvolver casos de testes para validar se uma pessoa pode entrar no vestibular de uma universidade privada, para que ele possa
 deve ter mais de 18 anos e ter pago ou não a matricula. Caso seja menor de 18 anos o responsavel deve assinar e pagar a matricula por ele.
  
- public boolean inscricaoAprovada(Pessoa pessoa){
-	if(pessoa.getIdade()>=18 || (pessoa.paiAssina() && pessoa.matriculaPaga()){
-		return true;
-	}
-	return false;
-  }
+	 public boolean inscricaoAprovada(Pessoa pessoa){
+		if(pessoa.getIdade()>=18 || (pessoa.paiAssina() && pessoa.matriculaPaga()){
+			return true;
+		}
+		return false;
+	  }
 
 
 
