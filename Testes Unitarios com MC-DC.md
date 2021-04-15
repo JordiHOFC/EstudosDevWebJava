@@ -39,36 +39,36 @@ Na terceira coluna pegamos a quantidade de caminhos e dividimos por ela mesma e 
 resolvemos as sub condições 
 
 resolvendo  B E C
-B- C -> (b && c)
-v- v ->    v
-v- f ->    v
-f- v ->    v
-f- f ->    f
+	B- C -> (b && c)
+	v- v ->    v
+	v- f ->    v
+	f- v ->    v
+	f- f ->    f
 
 resolvemos a condição final
 
-   A || (B && C) -> R
-1) v	v 	 -> v
-2) v	f 	 -> v	
-3) v	f        -> v
-4) v    f        -> v
-5) f	v        -> v
-6) f    f        -> f
-7) f	f        -> f
-8) f   	f        -> f
+	   A || (B && C) -> R
+	1) v	v 	 -> v
+	2) v	f 	 -> v	
+	3) v	f        -> v
+	4) v    f        -> v
+	5) f	v        -> v
+	6) f    f        -> f
+	7) f	f        -> f
+	8) f   	f        -> f
 
 econtramos a tabela final 
 TABELA VERDADE - final
 
-A- B- C -> R
-v- v- v -> v
-v- v- f -> v
-v- f- v -> v
-v- f- f -> v
-f- v- v -> v
-f- v- f -> f
-f- f- v -> f
-f- f- f -> f
+	A- B- C -> R
+	v- v- v -> v
+	v- v- f -> v
+	v- f- v -> v
+	v- f- f -> v
+	f- v- v -> v
+	f- v- f -> f
+	f- f- v -> f
+	f- f- f -> f
 
 
 MC/DC = modify conditional decision coverage
@@ -80,15 +80,15 @@ PASSO 4 -  encontrar a lista de condições que vamos implementar os nossos test
 
 1)LEVAR EM CONSIDERACAO A CONDICAÇÃO: A -- LISTA DE PARES PARA A {VAZIO}
  
- A ||(B && C) 	-> r
-1) v- v- v  	-> v     
-2) v- v- f 	-> v
-3) v- f- v	-> v
-4) v- f- f 	-> v
-5) f- v- v 	-> v
-6) f- v- f 	-> f
-7) f- f- v 	-> f
-8) f- f- f 	-> f
+	 A ||(B && C) 	-> r
+	1) v- v- v  	-> v     
+	2) v- v- f 	-> v
+	3) v- f- v	-> v
+	4) v- f- f 	-> v
+	5) f- v- v 	-> v
+	6) f- v- f 	-> f
+	7) f- f- v 	-> f
+	8) f- f- f 	-> f
 
 A -> V mudamos o seu valor para falso -> a=f, buscamos encontrar uma condição que tenha valor de R oposto ao da expressão: 1) 
 então procuramos ->  (f v v) = f - nao encontrado L{}
@@ -118,15 +118,15 @@ ENTÃO A LISTA DE PARES PARA CONDICAO A É l={(2,6),(3,7),(4,8)}
 
 2)LEVAR EM CONSIDERACAO A CONDICAÇÃO: B - LISTA DE PARES PARA B{VAZIO}
 
-  A ||(B && C) 	-> r
-1) v- v- v  	-> v     
-2) v- v- f 	-> v
-3) v- f- v	-> v
-4) v- f- f 	-> v
-5) f- v- v 	-> v
-6) f- v- f 	-> f
-7) f- f- v 	-> f
-8) f- f- f 	-> f
+ 	 A ||(B && C) 	-> r
+	1) v- v- v  	-> v     
+	2) v- v- f 	-> v
+	3) v- f- v	-> v
+	4) v- f- f 	-> v
+	5) f- v- v 	-> v
+	6) f- v- f 	-> f
+	7) f- f- v 	-> f
+	8) f- f- f 	-> f
 
 B -> V mudamos o seu valor para falso -> b=f, buscamos encontrar uma condição que tenha valor de R oposto ao da expressão: 1) 
 então procuramos ->  (v f v) = f - nao encontrado L{}
@@ -155,15 +155,15 @@ então procuramos ->  (f v f) = v -  nao encontramos, L{(5,7)}
 ENTÃO A LISTA DE PARES PARA CONDICAO B É l={(5,7)}
 
 3)LEVAR EM CONSIDERACAO A CONDICAÇÃO: C - LISTA DE PARES PARA C{VAZIO}
-  A ||(B && C) 	-> r
-1) v- v- v  	-> v     
-2) v- v- f 	-> v
-3) v- f- v	-> v
-4) v- f- f 	-> v
-5) f- v- v 	-> v
-6) f- v- f 	-> f
-7) f- f- v 	-> f
-8) f- f- f 	-> f
+	  A ||(B && C) 	-> r
+	1) v- v- v  	-> v     
+	2) v- v- f 	-> v
+	3) v- f- v	-> v
+	4) v- f- f 	-> v
+	5) f- v- v 	-> v
+	6) f- v- f 	-> f
+	7) f- f- v 	-> f
+	8) f- f- f 	-> f
 
 C -> V mudamos o seu valor para falso -> C=f, buscamos encontrar uma condição que tenha valor de R oposto ao da expressão: 1) 
 então procuramos ->  (v v f) = f - nao encontrado L{}
